@@ -20,11 +20,47 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .title {
   text-align: center;
   font-size: 32px;
   line-height: 1.25;
   padding-bottom: 10px;
+}
+
+.main_btn {
+  height: 48px;
+  width: 100%;
+  font-size: 18px;
+  background-color: #f04240;
+  color: #fff;
+  border-color: #f04240;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid;
+  border-radius: 3px;
+  white-space: nowrap;
+  -webkit-transition: all 0.125s ease-in;
+  transition: all 0.125s ease-in;
+  cursor: pointer;
+}
+
+.main_btn:hover {
+  background-color: #cc3a37;
 }
 
 /* NAVBAR */
@@ -215,23 +251,6 @@ header .navbar .nav_btn:hover {
   cursor: pointer;
 }
 
-#banner .banner_wrap .order button {
-  width: 100%;
-  height: 46px;
-  border: none;
-  background-color: #f04240;
-  padding: 0 20px;
-  border-radius: 3px;
-  font-size: 17px;
-  color: #fff;
-  -webkit-transition: all 0.125s ease-in;
-  transition: all 0.125s ease-in;
-}
-
-#banner .banner_wrap .order button:hover {
-  background-color: #cc3a37;
-}
-
 #banner .banner_wrap .order p {
   padding-top: 25px;
   color: #697982;
@@ -373,4 +392,130 @@ header .navbar .nav_btn:hover {
 #why_us .container ul li:nth-child(6) .icon {
   background-image: url(/src/assets/img/card.svg);
 }
+
+/* DELIVERY */
+#delivery {
+  border-top: 2px solid #f2f6fc;
+}
+
+#delivery .container {
+  padding: 40px 0;
+}
+
+#delivery .container .block_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#delivery .container .block_wrap .block {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+
+#delivery .container .block_wrap .block .img_holder {
+  padding-bottom: 20px;
+}
+
+#delivery .container .block_wrap .block .button_wrap {
+  height: 48px;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #f04240;
+  border-color: #f04240;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid;
+  border-radius: 3px;
+  white-space: nowrap;
+  -webkit-transition: all 0.125s ease-in;
+  transition: all 0.125s ease-in;
+  cursor: pointer;
+}
+
+#delivery .container .block_wrap .block .button_wrap a {
+  line-height: 46px;
+  text-align: center;
+  color: #f04240;
+  padding: 0 20px;
+  text-decoration: none;
+  -webkit-transition: all 0.125s ease-in;
+  transition: all 0.125s ease-in;
+}
+
+#delivery .container .block_wrap .block .button_wrap:hover {
+  background-color: #cc3a37;
+  border-color: #cc3a37;
+}
+
+#delivery .container .block_wrap .block .button_wrap:hover a {
+  color: #fff;
+}
+
+#delivery .container .block_wrap .block:first-child {
+  margin-right: 75px;
+}
+
+#delivery .container .block_wrap .block:last-child {
+  margin-left: 75px;
+}
+
+/* HOW WE WORK */
+#work {
+  border-top: 2px solid #f2f6fc;
+}
+
+#work .container {
+  padding: 40px 0;
+}
+
+#work .container .text {
+  width: 700px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+
+#work .container .text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+#work .container .text p a {
+  color: #f04240;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f04240;
+          text-decoration-color: #f04240;
+}
+
+#work .container .button_wrap {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#work .container .button_wrap a {
+  color: #fff;
+}
+
+/* FOOTER */
 /*# sourceMappingURL=style.css.map */
