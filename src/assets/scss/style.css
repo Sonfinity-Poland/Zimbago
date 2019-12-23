@@ -158,7 +158,7 @@ header .navbar .nav_btn:hover {
 
 /* BANNER */
 #banner {
-  background-image: url(/src/assets/img/header-promo.svg);
+  background-image: url(../img/header-promo.svg);
   height: 580px;
   background-repeat: no-repeat;
   background-color: #fff9f5;
@@ -384,27 +384,27 @@ header .navbar .nav_btn:hover {
 }
 
 #why_us .container ul li:nth-child(1) .icon {
-  background-image: url(/src/assets/img/rocket.svg);
+  background-image: url(../img/rocket.svg);
 }
 
 #why_us .container ul li:nth-child(2) .icon {
-  background-image: url(/src/assets/img/calc.svg);
+  background-image: url(../img/calc.svg);
 }
 
 #why_us .container ul li:nth-child(3) .icon {
-  background-image: url(/src/assets/img/rate.svg);
+  background-image: url(../img/rate.svg);
 }
 
 #why_us .container ul li:nth-child(4) .icon {
-  background-image: url(/src/assets/img/wizard.svg);
+  background-image: url(../img/wizard.svg);
 }
 
 #why_us .container ul li:nth-child(5) .icon {
-  background-image: url(/src/assets/img/sms.svg);
+  background-image: url(../img/sms.svg);
 }
 
 #why_us .container ul li:nth-child(6) .icon {
-  background-image: url(/src/assets/img/card.svg);
+  background-image: url(../img/card.svg);
 }
 
 /* DELIVERY */
