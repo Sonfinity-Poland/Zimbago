@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 
 /*GENERAL */
 
@@ -17,6 +18,7 @@ main {
 
 p {
     margin: 0;
+    font-size: 18px;
 }
 
 .row {
@@ -83,6 +85,10 @@ header {
         display: flex;
         justify-content: space-between;
 
+        .logo {
+            max-width: 200px;
+        }
+
         .navbar-collapse {
             flex-grow: unset;
             align-items: center;
@@ -140,10 +146,11 @@ header {
 
 #banner {
     background-image: url(../img/header-promo.svg);
-    height: 580px;
+    height: 680px;
     background-repeat: no-repeat;
     background-color: #fff9f5;
-    background-position: calc(50% - 280px) 80%;
+    background-size: cover;
+    background-position: center;
     margin-top: 65px;
 
     .banner_wrap {
@@ -531,14 +538,222 @@ footer {
                 }
             }
         }
+
+        .wrapper {
+            img {
+                max-width: 150px;
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+    //TEMPLATES 
+//TERMS & CONDITIONS
+
+#terms {
+    font-family: 'Roboto',Arial,sans-serif;
+
+    p {
+        font-size: 20px;
+        line-height: 1.55;
+        font-weight: 300;
+        color: #000;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        max-width: 880px;
+
+        .text {
+            text-align: left;
+        }
+
+        .title {
+            font-size: 36px;
+            line-height: 1.23;
+            font-weight: 600;
+            color: #000;
+            padding: 135px 0 90px 0;
+        }
+
+        .subtitle {
+            font-size: 28px;
+            line-height: 1.17;
+            margin-bottom: 35px;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .hero {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .box_wrapper {
+            margin-top: 100px;
+
+            .box {
+                background-color: #f5f5f5;
+                padding: 60px;
+                margin-bottom: 180px;
+            }
+        }
+    }
+
+    footer {
+        background-color: #000;
+        text-align: center;
+        padding: 35px 0 45px;
+
+        .footer_wrapper {
+            max-width: 340px;
+            margin: 0 auto;
+            display: block;
+
+            .inner {
+                margin-bottom: 20px;
+                opacity: .4;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            p {
+                letter-spacing: .2px;
+                line-height: 1.4;
+                font-size: 14px;
+                color: #fff;
+                font-family: Arial;
+            }
+
+            img {
+                width: 40px;
+                padding-bottom: 15px;
+            }
+
+            .btn {
+                background-color: #fff;
+                color: #000;
+                padding: 10px 20px;
+                font-size: 13px;
+                border-radius: 50px;
+                text-decoration: none;
+            }
+
+            .term_link {
+                font-size: 13px;
+                text-decoration: none;
+                color: #fff;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+//ABOUT US
+#about {
+    margin-top: 130px;
+    margin-bottom: 50px;
+
+    p {
+        font-size: 1em;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        list-style: disc;
+        padding-left: 20px;
+    }
+
+    ol {
+        list-style: lower-roman;
+    }
+}
+
+//TRACKING
+#track {
+    margin-top: 130px;
+
+    .container {
+        .title {
+            text-align: left;
+        }
+
+        p {
+            color: #333c4e;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .order_tracking {
+           padding: 30px 0; 
+
+           .order_wrapper {
+               display: flex;
+               flex-direction: row;
+
+               .input {
+                   width: 240px;
+                   margin-right: 16px;
+
+                   input {
+                       width: 100%;
+                       border: 1px solid #e4d9cd !important;
+                        border-radius: 2px !important;
+                        box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+                        padding: 12px;
+                    }
+
+                    button {
+                        padding: 10px 30px;
+                        font-size: 16px;
+                        width: 65%;
+                        color: #fff;
+                        text-align: center;
+                        background-color: grey;
+                        border: 1px solid gray;
+                        border-radius: 3px;
+                        cursor: pointer;
+                        user-select: none;
+                        outline: none;
+                        text-decoration: none;
+                    }
+                }
+           }
+        }
+
+        .mobile_tracking {
+            padding: 40px 30px;
+            background-color: #f5f5f5;
+            margin-bottom: 50px;
+
+            h2 {
+                margin: 0;
+                color: #333c4e;
+                font-size: 23px;
+                line-height: normal;
+                font-weight: normal;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//CONTACT
+#map {
+    iframe {
+        display: block;
     }
 }
 
 @media (max-width: 1120px) {
     #banner {
         height: 460px;
-        background-size: 65%;
-        background-position: calc(50% - 180px) 70%;
         padding-bottom: 110px;
 
         .banner_wrap {
@@ -610,6 +825,8 @@ footer {
                 margin-bottom: 15px;
             }
         }
+
+        
     }
 
     #banner {
@@ -715,5 +932,34 @@ footer {
                 }
             }
         } 
+    }
+
+    #terms {
+        .title {
+            font-size: 24px!important;
+        }
+
+        .subtitle {
+            font-size: 22px!important;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.45;
+        }
+
+        .box {
+            padding: 10px!important;
+        }
+    }
+
+    #track {
+        .order_wrapper {
+            flex-direction: column!important;
+
+            .input {
+                margin-bottom: 20px;
+            }
+        }
     }
 }
